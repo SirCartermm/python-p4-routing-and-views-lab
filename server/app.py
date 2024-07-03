@@ -22,4 +22,14 @@ def math(num1, operation, num2):
     elif operation == "-":
         result = num1 - num2
     elif operation == "*":
-       
+        result = num1 * num2
+    elif operation == "div":
+        result = num1 / num2
+    elif operation == "%":
+        result = num1 % num2
+    else:
+        return "Invalid operation"
+    return str(result)
+
+if __name__ == "__main__":
+    app.run(port=5555)
